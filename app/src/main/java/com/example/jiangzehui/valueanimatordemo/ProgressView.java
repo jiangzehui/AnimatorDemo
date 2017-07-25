@@ -119,7 +119,8 @@ public class ProgressView extends View {
 
         ValueAnimator mNumAnim = ValueAnimator.ofInt(0, progress);
         mNumAnim.setDuration(2000);
-        //mNumAnim.setRepeatCount(-1);
+        //mNumAnim.setRepeatCount(-1);//设置循环次数
+        mNumAnim.setRepeatMode(ValueAnimator.REVERSE);//循环模式包括RESTART和REVERSE两种，分别表示重新播放和倒序播放
         mNumAnim.setInterpolator(new BounceInterpolator());
         mNumAnim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
 
