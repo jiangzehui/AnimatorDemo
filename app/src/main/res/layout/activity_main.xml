@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jiangzehui.valueanimatordemo.MainActivity">
+    tools:context="com.example.jiangzehui.valueanimatordemo.Demo1Activity">
 
     <com.example.jiangzehui.valueanimatordemo.ProgressView
         android:padding="10dp"

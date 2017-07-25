@@ -2,7 +2,6 @@ package com.example.jiangzehui.valueanimatordemo;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.CornerPathEffect;
@@ -13,11 +12,8 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
-import android.view.animation.AccelerateInterpolator;
 import android.view.animation.BounceInterpolator;
-import android.view.animation.DecelerateInterpolator;
 
 import java.text.DecimalFormat;
 
@@ -123,7 +119,7 @@ public class ProgressView extends View {
 
         ValueAnimator mNumAnim = ValueAnimator.ofInt(0, progress);
         mNumAnim.setDuration(2000);
-        mNumAnim.setRepeatCount(-1);
+        //mNumAnim.setRepeatCount(-1);
         mNumAnim.setInterpolator(new BounceInterpolator());
         mNumAnim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
 
@@ -141,7 +137,7 @@ public class ProgressView extends View {
 
         ValueAnimator mValAnim = ValueAnimator.ofFloat(0, value);
         mValAnim.setDuration(2000);
-        mValAnim.setRepeatCount(-1);
+        //mValAnim.setRepeatCount(-1);
         mValAnim.setInterpolator(new BounceInterpolator());
         mValAnim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
 
